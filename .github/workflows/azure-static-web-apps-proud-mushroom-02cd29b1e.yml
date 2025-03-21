@@ -34,10 +34,7 @@ jobs:
            result-encoding: string
       - name: Set Node Options
         run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
-      - name: Set Node.js Version
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16  # Downgrade to Node.js 16 if needed
+
 
       - name: Install Dependencies
         run: npm install
